@@ -19,6 +19,9 @@ body{
   padding: 1rem 2rem;
   z-index: 10;
 }
+.mobile-nav{
+  color: #FFF;
+}
 .logo{
   display: flex;
   align-items: center;
@@ -27,9 +30,6 @@ body{
 .logo img{
   height: 1.5rem;
   padding-right: 1rem;
-}
-.mobile-nav{
-  display: none;
 }
 nav{
   width: 30%;
@@ -112,7 +112,12 @@ footer img{
   height: 1.5rem;
   margin-right: 1rem;
 }
-
+/* MEDIA QUERIES */
+@media only screen and (min-width: 671px){
+  .mobile-nav{
+    display: none;
+  }
+}
 @media only screen and (max-width: 1111px){
   .container{
     width: 100%;
@@ -132,5 +137,88 @@ footer img{
     font-size: 1.33rem;
     line-height: 1.2;
     padding: 1.75rem 4rem;
+  }
+  nav{
+    width: 50%;
+  }
+  footer{
+    padding: 4rem 0rem;
+    width: 100%;
+  }
+  footer img{
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 670px){
+  .container{
+    width: 100%;
+  }
+  .main{
+    margin-right: 2rem;
+    top: 5rem;
+  }
+  .nav{
+    display: none;
+  }
+  .mobile-nav{
+    justify-content: flex-end;
+  }
+  .banner{
+    height: 17em;
+    background-position: left ;
+  }
+  .main{
+    margin: 0;
+    top: 9rem;
+  }
+  .content{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .services{
+    flex-direction: column;
+    margin: 3.77rem;
+  }
+  .service{
+    padding: 0;
+    margin: 1.54rem;
+    height: 5rem;
+  }
+  .service img.paper-icon{
+    margin-bottom: 1rem;
+  }
+  .service2{
+    padding-top: 1rem;
+  }
+  .information{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .info, h2{
+    width: 100%;
+  }
+  .info{
+    margin: 0;
+    padding-bottom: 4rem;
+  }
+  h2{
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  p{
+    font-size: 0.77rem;
+  }
+  footer{
+    padding: 4rem 0rem;
+  }
+  .head span, footer span{
+    display: none;
+  }
+  footer img{
+    margin: 0 auto;
   }
 }
