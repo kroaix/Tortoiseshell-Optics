@@ -7,11 +7,11 @@ body{
   line-height: 1.4;
 }
 h2{
-  width: 10rem;
   font-size: 1rem;
   font-weight: bold;
-  background: cadetblue;
+  width: 10rem;
   color: #FFF;
+  background: cadetblue;
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
@@ -36,10 +36,10 @@ h2{
   top: 10rem;
 }
 .content{
-  background: #FFF;
+  line-height: 1.2;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.2;
+  background: #FFF;
   padding: 2rem 4rem;
 }
 .logo{
@@ -52,11 +52,11 @@ h2{
   padding-right: 1rem;
 }
 .head{
-  font-size: 1rem;
-  background: cadetblue;
   display: flex;
   align-items: center;
+  font-size: 1rem;
   color: #FFF;
+  background: cadetblue;
   padding: 1rem 2rem;
   z-index: 10;
 }
@@ -67,25 +67,21 @@ nav ul{
   display: flex;
   justify-content: space-between;
 }
-.mobile-nav{
-  color: #FFF;
-}
 
 /*============================================================= SERVICES STYLES */
 .services{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .service{
-  padding-top: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
   width: 5rem;
   height: 8rem;
+  padding-top: 3rem;
   margin: 3rem;
 }
 .service img.paper-icon{
@@ -98,9 +94,9 @@ nav ul{
 
 /*============================================================= INFORMATION STYLES */
 .information{
-  padding-top: 3rem;
   display: flex;
   justify-content: center;
+  padding-top: 3rem;
   margin-bottom: 5rem;
 }
 .info{
@@ -110,17 +106,15 @@ nav ul{
 
 /*============================================================= FOOTER STYLES */
 footer{
-  background: azure;
-  padding: 4rem;
   display: flex;
   align-items: center;
+  background: azure;
+  padding: 4rem;
 }
 footer img{
   height: 1.5rem;
   margin-right: 1rem;
 }
-
-
 
 /*============================================================= MEDIA QUERIES */
 @media only screen and (min-width: 671px){
@@ -133,12 +127,16 @@ footer img{
   .container{
     width: 100%;
   }
-  .banner{
-    height: 22rem;
-  }
   .head, .services, .information, footer{
     position: relative;
     top: 0;
+  }
+
+  .banner{
+    height: 22rem;
+  }
+  nav{
+    width: 50%;
   }
   .main{
     margin-right: 2rem;
@@ -148,9 +146,6 @@ footer img{
     font-size: 1.33rem;
     line-height: 1.2;
     padding: 1.75rem 4rem;
-  }
-  nav{
-    width: 50%;
   }
   footer{
     padding: 4rem 0rem;
@@ -164,6 +159,16 @@ footer img{
 @media only screen and (max-width: 670px){
   .container{
     width: 100%;
+  }
+  .head span, footer span{
+    display: none;
+  }
+  h2{
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  p{
+    font-size: 0.77rem;
   }
   .main{
     margin-right: 2rem;
@@ -216,18 +221,8 @@ footer img{
     margin: 0;
     padding-bottom: 4rem;
   }
-  h2{
-    text-align: center;
-    padding: 0.5rem 0rem;
-  }
-  p{
-    font-size: 0.77rem;
-  }
   footer{
     padding: 4rem 0rem;
-  }
-  .head span, footer span{
-    display: none;
   }
   footer img{
     margin: 0 auto;
